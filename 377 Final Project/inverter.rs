@@ -48,18 +48,17 @@ fn index_inserter(word: &str, inverted_index: &mut BTreeMap<String, BTreeSet<usi
         .insert(file_number);
 }
 
-// Function to build an inverted index from a list of files
 fn build_inverted_index(filename: &str) -> io::Result<String> {
     // Open the file list and create a BufRead reader
     let file_list_reader = io::BufReader::new(File::open(filename)?);
 
-    // Create a BTreeMap to store the inverted index
+    // Creates a BTreeMap Data Structure
     let mut inverted_index: BTreeMap<String, BTreeSet<usize>> = BTreeMap::new();
     let mut file_number = 0;
 
     // Iterate over each file in the file list
     for file in file_list_reader.lines() {
-        // Open the current file and create a BufRead reader
+     
         let cur_file_reader = io::BufReader::new(File::open(&file?)?);
 
         // Iterate over each line in the current file
@@ -70,19 +69,17 @@ fn build_inverted_index(filename: &str) -> io::Result<String> {
             // Iterate over the characters in the line
             for (i, cur_char) in line.char_indices() {
                 if !((cur_char >= 'a' && cur_char <= 'z') || cur_char >= 'A' && cur_char <= 'Z') {
-                    // Extract the word between non-alphabetic characters
+             
                     if i == word_start {
                         word_start += 1;
                     } else {
                         let word = &line[word_start..i];
                         word_start = i + 1;
-                        // Insert the word into the inverted index
                         index_inserter(word, &mut inverted_index, file_number);
                     }
                 }
             }
-
-            // Insert the last word in the line, if any
+            
             if word_start != line.len() {
                 let word = &line[word_start..];
                 index_inserter(word, &mut inverted_index, file_number);
@@ -92,12 +89,11 @@ fn build_inverted_index(filename: &str) -> io::Result<String> {
         file_number += 1;
     }
 
-     // Create a String to store the output
      let mut output = String::new();
 
      //Iterate over the keys (words) of the inverted index in sorted order
      for word in inverted_index.keys() {
-         let file_numbers = inverted_index.get(word).unwrap(); // Safe to unwrap as word is guaranteed to be in inverted_index
+         let file_numbers = inverted_index.get(word).unwrap(); //Unwrap is safe to use here because it is in the inverted_index
          output.push_str(&format!("{}:", word));
          print_set(&file_numbers, &mut output);
      }
