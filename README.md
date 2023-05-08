@@ -1,4 +1,4 @@
-Sriram Maganti 
+# Sriram Maganti 
 Final Project CS 377 
 Rust Implementation of Project 1
 
