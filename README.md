@@ -1,4 +1,6 @@
-# 377-FinalProject
+Sriram Maganti 
+Final Project CS 377 
+Rust Implementation of Project 1
 
 
 # Design
