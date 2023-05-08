@@ -1,5 +1,5 @@
 # Sriram Maganti 
-Final Project CS 377 
+Final Project CS 377 <br>
 Rust Implementation of Project 1
 
 
