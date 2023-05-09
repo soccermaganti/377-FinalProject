@@ -2,8 +2,6 @@
 Final Project CS 377 <br>
 Rust Implementation of Project 1
 
-
-# Design
 ## Notes
 Moving on to the project, learning about Rust and implementing it within this project was interesting because I learned about all the ways Rust was different from C/C++. One of the ways is that Rust Syntax is typically written using snake_case naming conventions. This is when variable names are separated by underscores and in lowercase. This is different from C++ and its CamelCase naming conventions. Also as you can see, you can make functions public by adding the keyword “pub” in front of fn  so you can call it from other files. I’ll show this in the demo.
 
