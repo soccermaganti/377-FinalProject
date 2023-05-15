@@ -2,6 +2,15 @@
 Final Project CS 377 <br>
 Rust Implementation of Project 1
 
+# How to Run the Project
+1) Download the project and open it in any coding base you want.
+2) Open up the terminal and type in "rustc main.rs"
+3) After that type in "./main file_list.txt"
+4) It will display the results of the sorted words and where they are in each file.
+5) You can change the text files to contain anything you want.
+
+
+
 ## Notes
 Learning about Rust and implementing it within this project was interesting because I learned about all the ways Rust was different from C/C++. One of the ways is that Rust Syntax is typically written using snake_case naming conventions. This is when variable names are separated by underscores and in lowercase. This is different from C++ and its CamelCase naming conventions. Also as you can see, you can make functions public by adding the keyword “pub” in front of fn  so you can call it from other files. I’ll show this in the demo.
 
@@ -13,6 +22,8 @@ In C++, we used a map of sets to implement the inverted index. In my rust implem
 
 
 Finally, we have the `mut` keyword, which is short for "mutable". In Rust, variables are immutable by default, meaning that their values cannot be changed once they have been assigned but can be changed it we add mut in front of let. Ex: let mut monkey;
+
+
 
 ### Link to Slide-show and Video Demo
 https://docs.google.com/presentation/d/1JCkXV8rMzSmWvxcRApW29Ae_8BCGpbQ8wGNQGXQLVCM/edit?usp=sharing
