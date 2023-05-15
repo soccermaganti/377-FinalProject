@@ -3,7 +3,7 @@ Final Project CS 377 <br>
 Rust Implementation of Project 1
 
 ## Notes
-Moving on to the project, learning about Rust and implementing it within this project was interesting because I learned about all the ways Rust was different from C/C++. One of the ways is that Rust Syntax is typically written using snake_case naming conventions. This is when variable names are separated by underscores and in lowercase. This is different from C++ and its CamelCase naming conventions. Also as you can see, you can make functions public by adding the keyword “pub” in front of fn  so you can call it from other files. I’ll show this in the demo.
+Learning about Rust and implementing it within this project was interesting because I learned about all the ways Rust was different from C/C++. One of the ways is that Rust Syntax is typically written using snake_case naming conventions. This is when variable names are separated by underscores and in lowercase. This is different from C++ and its CamelCase naming conventions. Also as you can see, you can make functions public by adding the keyword “pub” in front of fn  so you can call it from other files. I’ll show this in the demo.
 
 Another way Rust differs is that for the fileList Streams in the C++ implementation, you have to close them each time by typing in fileList.close();. However, this is different from Rust because the File Type automatically implements the Drop trait. This means that when the File goes out of scope, it will close by itself and you don’t need to manually close the current file.
 
