@@ -4,8 +4,8 @@ Rust Implementation of Project 1
 
 # How to Run the Project
 1) Download the project and open it in any coding base you want.
-2) Open up the terminal and type in 'rustc main.rs'
-3) After that type in './main file_list.txt'
+2) Open up the terminal and type in `rustc main.rs`
+3) After that type in `./main file_list.txt`
 4) It will display the results of the sorted words and where they are in each file.
 5) You can change the text files to contain anything you want.
 
@@ -18,7 +18,7 @@ Another way Rust differs is that for the fileList Streams in the C++ implementat
 
 In the original implementation, we read the files using a built-in method called getline(). It reads a line of text from an input stream and stores it in a string object. Comparing this to rust, I used a BufReader, which is a type of Reader that provides additional functionality by using an internal buffer to optimize certain reading operations. Without a buffer, operations such as reading a file line-by-line can be inefficient, but BufReader's read_line method and lines iterator make it easy to read files in this way. In addition to line-by-line reading, BufReader also supports other useful methods such as read_until and read_exact. By using BufReader, you can improve the performance of your file reading operations and take advantage of its convenient methods for processing text.
 
-In C++, we used a map of sets to implement the inverted index. In my rust implementation, I decided to use a BTreeMap of sets. A BTreeMap is a map implementation that uses a balance Binary Search tree to store the elements. The keys are stored in the tree in sorted order, which allows for efficient lookup, insertion, and deletion operations while maintaining the sorted order of the keys. This is because the BTreeMap has a characteristic called “Ord”. According to the rust documentation, Ord is a trait for types that form a total order. Total Order In mathematics, a total or linear order is a partial order in which any two elements are comparable. A set equipped with a total order is a totally ordered set.
+In C++, we used a map of sets to implement the inverted index. In my rust implementation, I decided to use a BTreeMap of sets. A BTreeMap is a map implementation that uses a balance Binary Search tree to store the elements. The keys are stored in the tree in sorted order, which allows for efficient lookup, insertion, and deletion operations while maintaining the sorted order of the keys. This is because the BTreeMap has a characteristic called [`Ord`](https://doc.rust-lang.org/std/cmp/trait.Ord.html). According to the rust documentation, Ord is a trait for types that form a total order. Total Order In mathematics, a total or linear order is a partial order in which any two elements are comparable. A set equipped with a total order is a totally ordered set.
 
 
 Finally, we have the `mut` keyword, which is short for "mutable". In Rust, variables are immutable by default, meaning that their values cannot be changed once they have been assigned but can be changed it we add mut in front of let. Ex: let mut monkey;
