@@ -4,8 +4,8 @@ Rust Implementation of Project 1
 
 # How to Run the Project
 1) Download the project and open it in any coding base you want.
-2) Open up the terminal and type in "rustc main.rs"
-3) After that type in "./main file_list.txt"
+2) Open up the terminal and type in 'rustc main.rs'
+3) After that type in './main file_list.txt'
 4) It will display the results of the sorted words and where they are in each file.
 5) You can change the text files to contain anything you want.
 
