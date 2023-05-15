@@ -1,6 +1,6 @@
 # Sriram Maganti 
-Final Project CS 377 <br>
-Rust Implementation of Project 1
+# Final Project CS 377 <br>
+# Rust Implementation of Project 1
 
 # How to Run the Project
 1) Download the project and open it in any coding base you want.
