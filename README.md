@@ -23,6 +23,9 @@ In C++, we used a map of sets to implement the inverted index. In my rust implem
 
 Finally, we have the [`mut`](https://doc.rust-lang.org/std/keyword.mut.html) keyword, which is short for "mutable". In Rust, variables are immutable by default, meaning that their values cannot be changed once they have been assigned but can be changed it we add mut in front of let. Ex: let mut monkey;
 
+## Known Limitations
+
+None Im better
 
 
 ### Link to Slide-show and Video Demo
