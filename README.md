@@ -25,8 +25,9 @@ Finally, we have the [`mut`](https://doc.rust-lang.org/std/keyword.mut.html) key
 
 ## Known Limitations
 
-None Im better
+One limitation is that the input must be in the char boundry. 
 
+For example `♪` won't work as an input
 
 ### Link to Slide-show and Video Demo
 https://docs.google.com/presentation/d/1JCkXV8rMzSmWvxcRApW29Ae_8BCGpbQ8wGNQGXQLVCM/edit?usp=sharing
