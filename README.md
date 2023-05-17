@@ -27,7 +27,7 @@ Finally, we have the [`mut`](https://doc.rust-lang.org/std/keyword.mut.html) key
 
 One limitation is that the input must be in the char boundry. 
 
-For example `♪` won't work as an input
+For example `♪` and `é` won't work as inputs in the text files
 
 ### Link to Slide-show and Video Demo
 https://docs.google.com/presentation/d/1JCkXV8rMzSmWvxcRApW29Ae_8BCGpbQ8wGNQGXQLVCM/edit?usp=sharing
