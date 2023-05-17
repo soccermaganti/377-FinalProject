@@ -2,6 +2,10 @@
 Final Project CS 377 <br>
 Rust Implementation of Project 1
 
+# About the project
+  - This project was basically about implementing a data structure called an inverted index. From Wikipedia, “an inverted index is a database index storing a mapping from content, such as words or numbers, to its locations in a table, or a document or a set of documents.” There are many applications to this data structure as it is a central component of a typical search engine indexing algorithm. [5] A goal of a search engine implementation is to optimize the speed of the query: find the documents where word X occurs.
+
+
 # How to Run the Project
 1) Download the project and open it in any coding base you want.
 2) Open up the terminal and type in `rustc main.rs`
